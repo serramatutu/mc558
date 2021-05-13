@@ -31,7 +31,10 @@ size_t get_largest_erdos_number(const vector<list<size_t> >& graph) {
     size_t num_visited = 0;
 
     queue<size_t> q;
+    
     q.push(0);
+    visited[0] = true;
+    num_visited++;
 
     while(!q.empty()) {
         size_t current = q.front();
