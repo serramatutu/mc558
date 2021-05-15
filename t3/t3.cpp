@@ -6,7 +6,7 @@
 
 using namespace std;
 
-vector<list<size_t> > read_input(istream& s) {
+vector<list<size_t> > read_input() {
     size_t nodes, edges;
     cin >> nodes >> edges;
 
@@ -63,7 +63,7 @@ size_t get_largest_erdos_number(const vector<list<size_t> >& graph) {
 }
 
 int main() {
-    vector<list<size_t> > graph(read_input(cin));
+    vector<list<size_t> > graph(read_input());
     size_t largest_erdos_number = get_largest_erdos_number(graph);
     
     if (largest_erdos_number == numeric_limits<size_t>::max()) {
