@@ -3,6 +3,7 @@
         "stdexcept": "cpp",
         "forward_list": "cpp",
         "*.tcc": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "limits": "cpp"
     }
 }
