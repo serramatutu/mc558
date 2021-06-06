@@ -99,6 +99,10 @@ ReadInputResult read_input() {
 }
 
 size_t mst_size_knuth(Graph& g, size_t msts) {
+    if (msts == g.vertex.size()) {
+        return 0;
+    }
+
     size_t total_weight = 0;
     DisjointSet sets(g.vertex.size());
 
