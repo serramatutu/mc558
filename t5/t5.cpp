@@ -84,7 +84,7 @@ ReadInputResult read_input() {
     return result;
 }
 
-size_t mst_size_knuth(vector<GraphEdge>& edges, size_t n_vertex, size_t n_mst) {
+size_t mst_size_kruskal(vector<GraphEdge>& edges, size_t n_vertex, size_t n_mst) {
     if (n_mst == n_vertex) {
         return 0;
     }
@@ -112,7 +112,7 @@ size_t mst_size_knuth(vector<GraphEdge>& edges, size_t n_vertex, size_t n_mst) {
 
 int main() {
     ReadInputResult input(read_input());
-    size_t total_weight = mst_size_knuth(input.edges, input.n_vertex, input.n_cluster);
+    size_t total_weight = mst_size_kruskal(input.edges, input.n_vertex, input.n_cluster);
     cout << total_weight << endl;
 
     return 0;
